@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.container{
+    width: 450px;
+    padding: 25px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.box{
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    
+}
+.box-1{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    justify-content: center;
+    gap: 20px;
+
+}
+.box-1 > a{
+    text-decoration: none;
+    color: #999;
+}
+.box-1 > a:hover{
+    color: #2626d8;
+}
+label{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    display: block;
+}
+
+input[type=text],[type=email],[type=password]{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+ 
+  input:required:invalid +::after {
+    content: "Please fill in this field"; /* Message text */
+    display: block; /* Make the message appear on a new line */
+    color: red; /* Message text color */
+    font-size: 12px; /* Message font size */
+    margin-top: 5px; /* Space between input field and message */
+  }
+  
+  
+  
+  button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px 0px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #3b3bd4;
+    color: aliceblue;
+    border: 0;
+    border-radius: 5px;
+    transition: 0.5s ease;
+  }
+  button:hover{
+    background-color: #2525f6;
+  }
