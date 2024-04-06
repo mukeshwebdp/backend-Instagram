@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const MONGOOSE_URL = process.env.MONGOOSE_URL || "mongodb://localhost:27017/instagramdb";
 
-const databaseconnect = ()=>{
-    mongoose
+const databaseconnect = async ()=>{
+    await mongoose
         .connect(MONGOOSE_URL,{
             // useUnifiedTopology: true
         })
